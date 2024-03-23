@@ -1,0 +1,684 @@
+<html lang="en-US" style="height: 100%">
+  <!-- Mirrored from www.w3schools.com/codegame/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Oct 2021 10:10:04 GMT -->
+
+  <head>
+    <title>Code Game</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="kokos visual programming" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="Keywords"
+      content="CodeGame,Code Game,Code,Game,coding for kids,coding for beginners,learn to code,programming,development,training,learning"
+    />
+
+    <style>
+      html {
+        box-sizing: border-box;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+    </style>
+
+    <script src="./assets/inflate.min.js"></script>
+    <script src="sweetalert.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="gsap.min.js"></script>
+    <script src="Draggable.min.js"></script>
+    <script src="MotionPathPlugin.min.js"></script>
+
+    <script src="ajaxjquery.min.js"></script>
+    <script src="modernizr.js"></script>
+    <!-- <script src="../codegame/cone/movement.js"></script>
+    <script src ="../codegame/cone/menu.js"></script>
+    <script src ="../codegame/cone/button.js"></script> -->
+    <script src="bundle.js"></script>
+
+    <!-- bootstrap -->
+    <!-- <script src="/assets/js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script> -->
+    <!-- <script src="test.js" defer></script> -->
+
+    <link rel="stylesheet" href="css/codeGameUI.css" />
+    <!-- <link rel="stylesheet" href="/assets/css/bootstrap.css"> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Freckle+Face&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- begin cmp -->
+
+    <style>
+
+      #warning-message {
+        text-align: center;
+        background-color: red;
+      }
+      /* #warning-message {
+        display: none;
+      }
+      @media only screen and (orientation: portrait) {
+        #wpr {
+          display: none;
+        }
+        #warning-message {
+          display: block;
+        }
+      }
+      @media only screen and (max-width: 1023px) {
+        #wpr {
+          display: none !important;
+        }
+
+        #warning-message {
+          display: block;
+        }
+      }
+      @media only screen and (orientation: landscape) {
+        #warning-message {
+          display: none;
+        }
+        #wpr {
+          display: flex !important;
+        }
+      } */
+
+      @media only screen and (min-width: 1018px) {
+        /* Styles for screens larger than or equal to iPad width */
+        #wpr {
+          display: block !important;
+          display: flex !important;
+          min-height: 100vh;
+        }
+        .container {
+          display: block !important;
+        }
+        #warning-message {
+          display: none !important;
+        }
+        /* 
+        .codeGame-control-lower {
+          min-width: 100% !important;
+          min-width: calc((56 + 12) * 5px + (20 * 2px) + 20px);
+          min-width: 400px;
+        } */
+
+        .container {
+          top: 100px !important;
+        }
+
+        #codeGame-button-runsequence {
+          background-image: none;
+          padding-left: 0;
+        }
+        .codeGame-control {
+          margin-top: -50;
+        }
+
+        .right-side-canvas {
+          flex: 2 !important;
+        }
+        .left-side-canvas {
+          flex: 2 !important;
+        }
+      }
+      @media only screen and (min-width: 1500px) {
+        #wpr {
+          height: 100vh;
+        }
+        .right-side-canvas {
+          flex: 1 !important;
+        }
+        .left-side-canvas {
+          flex: 2 !important;
+        }
+        .container {
+          top: 20% !important;
+        }
+      }
+
+      /* larger  */
+      /* @media only screen and (min-width: 900px) {
+        #wpr {
+          display: block !important;
+          display: flex !important;
+        }
+        #warning-message {
+          display: none !important;
+        }
+
+        .codeGame-control-lower {
+          min-width: calc(( 56 + 12 ) * 5px + (20 * 2px ) + 2px );
+        }
+
+        #codeGame-button-runsequence {
+          background-image: none;
+          padding-left: 0;
+          
+        }
+         .codeGame-control {
+          margin-top: -50;
+         }
+
+         .right-side-canvas {
+          flex: 2
+         }
+         .left-side-canvas {
+          flex: 3;
+         }
+      } */
+
+      @media only screen and (orientation: portrait) {
+        #wpr {
+          display: none !important;
+        }
+        .container {
+          display: none !important;
+        }
+        body {
+          background-color: #c8e6f0 !important;
+        }
+        #warning-message {
+          display: block !important;
+        }
+      }
+
+      @media only screen and (orientation: landscape) {
+        #warning-message {
+          display: none !important;
+        }
+        #wpr {
+          display: flex !important;
+        }
+        .container {
+          display: block !important;
+        }
+      }
+
+      @media only screen and (max-width: 1017px) {
+        #wpr {
+          display: none !important;
+        }
+        #warning-message {
+          display: block !important;
+        }
+        .container {
+          display: none !important;
+        }
+        body {
+          background-color: #c8e6f0;
+        }
+      }
+
+      #leftCanvas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #gameCanvas {
+        width: 100vh;
+        height: 100vh;
+      }
+
+      #Mute {
+        top: auto;
+        left: auto;
+        bottom: 50px !important;
+        right: 30px !important;
+      }
+
+      #Unmute {
+        top: auto !important;
+        left: auto !important;
+        bottom: 50px !important;
+        right: 30px !important;
+      }
+
+      #buttonID {
+        top: auto;
+        left: auto;
+        bottom: 110px !important;
+        right: 30px !important;
+      }
+
+      body {
+        width: 100% !important;
+        height: 100vh !important;
+      }
+    </style>
+    <style>
+      .container {
+        width: 39%;
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        /* top: -20%; */
+        left: 61%;
+        margin-top: -40px;
+      }
+
+      .body-bg-overlay {
+        background: black;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        opacity: 0.5;
+      }
+    </style>
+    <script type="text/javascript">
+      // __cmp("setLogo", "https://kokos.ai/images/kokos/kokoslogo_175x64.png");
+      // __cmp("setPrivacyPolicy", "https://www.w3schools.com/about/about_privacy.asp");
+      // $(window).load(function() {
+      //   // Animate loader off screen
+      //
+      // });
+      // window.addEventListener('DOMContentLoaded', function () {
+      //   setTimeout(function () {
+      //     $('.se-pre-con').fadeOut('slow');
+      //   }, 2000);
+      // });
+
+      $(document).ready(function () {
+        $('.buttonID').click(function () {
+          console.log('clicked');
+          if ($('.codeGame-control').is(':visible')) {
+            $('.codeGame-control').animate({ opacity: 0 }, 1000);
+            setTimeout(function () {
+              $('.codeGame-control').hide();
+              $('.buttonID').text('show');
+            }, 1001);
+          } else {
+            $('.codeGame-control').show();
+            $('.codeGame-control').animate({ opacity: 1 }, 1000);
+            $('.buttonID').text('hide');
+          }
+        });
+        $('.Mute').click(function () {
+          console.log('1 clicked');
+          document
+            .querySelectorAll('audio')
+            .forEach((elem) => (elem.muted = true));
+          $('.Mute').hide();
+          $('.Unmute').show();
+        });
+        $('.Unmute').click(function () {
+          console.log('2 clicked');
+          document
+            .querySelectorAll('audio')
+            .forEach((elem) => (elem.muted = false));
+          $('.Unmute').hide();
+          $('.Mute').show();
+        });
+      });
+    </script>
+    <!-- end cmp -->
+  </head>
+  <body
+    style="
+      margin: 0;
+      background-image: url('./images/bg.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    "
+  >
+    <!-- <div class="se-pre-con"></div> -->
+    <!-- CODEGAME START -->
+    <!-- <div id="wpr" style="background-color: #c8e6f0; display: flex"> -->
+    <div>
+      <div class="body-bg-overlay"></div>
+      <div id="wpr" style="/*! background-color: #c8e6f0; */ display: flex">
+        <div id="leftCanvas" class="left-side-canvas" style="flex: 2">
+          <canvas id="gameCanvas"></canvas>
+        </div>
+        <div
+          class="right-side-canvas"
+          id="about"
+          style="position: relative; z-index: 1"
+        >
+          <!-- bottom-left -->
+
+          <div class="walking">
+            <audio id="walking" src="Audio/tracing.mp3"></audio>
+            <audio
+              id="success"
+              src="./Audio/Cute Success Logo_Full.mp3"
+            ></audio>
+            <audio id="dead" src="Audio/Haunted Game Fail.wav"></audio>
+            <audio id="failed" src="Audio/Stage Failed.wav"></audio>
+          </div>
+          <div class="codeGame-render" id="codeGame-render"></div>
+
+          <!-- CODEGAME END -->
+          <script type="text/javascript">
+            var snhb = snhb || {};
+            snhb.queue = snhb.queue || [];
+            snhb.options = {
+              logOutputEnabled: false,
+              debugOutputEnabled: false,
+              PBJSDebugOutputEnabled: false,
+              auctionResultOutputEnabled: false,
+              allOutputEnabled: false,
+              autoStartAuction: false,
+            };
+            snhb.queue.push(function () {
+              //snhb.startAuction(["gamepage01"]);
+            });
+            function newLevelReady(n) {
+              // ga('send', 'event', 'game', n);
+              if (typeof snhb.startAuction === 'function') {
+                snhb.startAuction(['gamepage01']);
+              }
+            }
+          </script>
+
+          <script>
+            // var windows = document.querySelectorAll('.codeGame-control');
+            // [].forEach.call(windows, function (win) {
+            //   // …find the title bar inside it and do something onmousedown
+            //   var title = win.querySelector('.codeGame-control-code-header');
+            //   title.addEventListener(
+            //     'touchstart',
+            //     function (evt) {
+            //       // Record where the window started
+            //       var real = window.getComputedStyle(win),
+            //         winX = parseFloat(real.left),
+            //         winY = parseFloat(real.top);
+
+            //       // Record where the mouse started
+            //       var mX = evt.touches[0].clientX,
+            //         mY = evt.touches[0].clientY;
+            //       // When moving anywhere on the page, drag the window
+            //       // …until the mouse button comes up
+            //       document.body.addEventListener('touchmove', drag, false);
+            //       document.body.addEventListener(
+            //         'touchend',
+            //         function () {
+            //           document.body.removeEventListener('touchmove', drag, false);
+            //         },
+            //         false
+            //       );
+
+            //       // Every time the mouse moves, we do the following
+            //       function drag(evt) {
+            //         // Add difference between where the mouse is now
+            //         // versus where it was last to the original positions
+            //         win.style.left = winX + evt.touches[0].clientX - mX + 'px';
+            //         win.style.top = winY + evt.touches[0].clientY - mY + 'px';
+            //         console.log(win.style.left);
+            //       }
+            //     },
+            //     false
+            //   );
+
+            //   title.addEventListener(
+            //     'mousedown',
+            //     function (evt) {
+            //       // Record where the window started
+            //       var real = window.getComputedStyle(win),
+            //         winX = parseFloat(real.left),
+            //         winY = parseFloat(real.top);
+
+            //       // Record where the mouse started
+            //       var mX = evt.clientX,
+            //         mY = evt.clientY;
+            //       // When moving anywhere on the page, drag the window
+            //       // …until the mouse button comes up
+            //       document.body.addEventListener('mousemove', drag, false);
+            //       document.body.addEventListener(
+            //         'mouseup',
+            //         function () {
+            //           document.body.removeEventListener('mousemove', drag, false);
+            //         },
+            //         false
+            //       );
+
+            //       // Every time the mouse moves, we do the following
+            //       function drag(evt) {
+            //         // Add difference between where the mouse is now
+            //         // versus where it was last to the original positions
+            //         win.style.left = winX + evt.clientX - mX + 'px';
+            //         win.style.top = winY + evt.clientY - mY + 'px';
+            //         console.log(win.style.left);
+            //       }
+            //     },
+            //     false
+            //   );
+            // });
+          </script>
+
+          <!-- create the scene im A-frame -->
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal">
+      <button data-close-button class="closebutton" id="close-button"></button>
+      <div class="modal-body"></div>
+    </div>
+    <div class="modal1" style="z-index: 100003" id="modal1">
+      <!-- <div class="winModal">
+      congratulations
+    </div> -->
+      <!-- <div class="nextBtn">    -->
+      <button data-next-button class="next-button" id="next-button"></button>
+      <!-- </div> -->
+      <!-- <div class="cancelBtn">    -->
+      <button
+        data-cancel-button
+        class="cancel-button"
+        id="cancel-button"
+      ></button>
+      <!-- </div> -->
+      <div class="modal-body"></div>
+    </div>
+    <div class="modal2" style="z-index: 4000" id="modal2">
+      <div class="mazeout"></div>
+      <button
+        data-close2-button
+        class="closebutton"
+        id="close2-button"
+      ></button>
+      <div class="modal-body"></div>
+    </div>
+    <div id="overlay" class="overlay"></div>
+    <div class="container" style="z-index: 100">
+      <div id="codeGame-main">
+        <div class="codeGame-control" id="codeGame-control" style="width: 100%">
+          <div
+            id="codeGame-messagebox"
+            class="codeGame-control-sidebar codeGame-messagebox-container"
+            style="display: none"
+          >
+            <div class="codeGame-messagebox">
+              <div
+                id="codeGame-messagebox-section"
+                class="codeGame-messagebox-section success"
+              >
+                <div class="codeGame-messagebox-header">
+                  <pre id="codeGame-messagebox-title">Success</pre>
+                  <div class="circle"></div>
+                  <div style="right: 40px" class="circle"></div>
+                </div>
+                <div class="codeGame-messagebox-cover">
+                  <img src="assets/pinecones.svg" />
+                </div>
+
+                <div class="codeGame-messagebox-content">
+                  <h1 id="codeGame-messagebox-text" class="maintitle">
+                    Wooo!<br />Great job
+                  </h1>
+                </div>
+                <div class="codeGame codeGame-messagebox-actions">
+                  <button id="codeGame-nextLevel" class="nextLevel">
+                    Play next level
+                  </button>
+                  <button id="codeGame-retryLevel" class="retryLevel">
+                    <img src="assets/restart.svg" /><span>Retry</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="codeGame-levelselector"
+            class="codeGame-control-sidebar codeGame-levelselector"
+            style="display: none"
+          >
+            <div class="codeGame-levelselector-section">
+              <div class="codeGame-levelselector-header">
+                <pre id="codeGame-levelselector-title">Levels</pre>
+                <div class="circle"></div>
+                <div style="right: 28px" class="circle"></div>
+              </div>
+              <div
+                id="codeGame-levelselector-scrollcontainer"
+                class="codeGame-levelselector-scrollcontainer"
+              ></div>
+              <div class="codeGame-levelselector-footer">
+                <div class="codeGame">
+                  <button
+                    id="codeGame-levelselector-close"
+                    class="levelselector close"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="codeGame-gamebox"
+            class="codeGame-control-sidebar codeGame-control-container"
+            style="display: block; max-width: 100% !important"
+          >
+            <div id="codeGame-control-lower" class="codeGame-control-lower">
+              <div class="codeGame-control-code-container">
+                <div
+                  style="position: relative"
+                  class="codeGame-control-code-header"
+                  id="codeGame-control-code-header"
+                >
+                  <pre>Coding area</pre>
+                  <!-- <div id="drag" class="drag"></div> -->
+                  <div
+                    id="codeGame-levelTitle"
+                    class="codeGame-levelTitle"
+                    style="
+                      position: absolute;
+                      top: 5px;
+                      left: 50px;
+                      color: white;
+                    "
+                  >
+                    LEVEL 1
+                  </div>
+                  <div id="codeGame-button-clear" class="trash"></div>
+                  <div class="trashnote">Clear code</div>
+                  <div id="hint" class="circle"></div>
+                  <div class="hintnote">Hint info</div>
+                </div>
+                <div
+                  id="codeGame-control-code-sequence"
+                  class="codeGame codeGame-control-code-sequence"
+                ></div>
+                <div
+                  id="codeGame-control-actions"
+                  class="codeGame-control-code-actions"
+                >
+                  <div class="codeGame codeGame-control-buttons">
+                    <div
+                      style="display: none"
+                      id="codeGame-button-forward"
+                      class="button forward"
+                    ></div>
+                    <div
+                      style="display: none"
+                      id="codeGame-button-left"
+                      class="button left"
+                    ></div>
+                    <div
+                      style="display: none"
+                      id="codeGame-button-right"
+                      class="button right"
+                    ></div>
+                    <div
+                      style="display: none"
+                      id="codeGame-button-use"
+                      class="button use"
+                    ></div>
+                    <div
+                      style="display: none"
+                      id="codeGame-button-use-1"
+                      class="button use-1"
+                    ></div>
+                    <div
+                      style="display: none"
+                      id="codeGame-button-use-2"
+                      class="button use-2"
+                    ></div>
+                    <div
+                      style="display: none"
+                      id="codeGame-button-loop"
+                      class="button loop"
+                    ></div>
+                    <div
+                      style="display: none"
+                      id="codeGame-button-Open"
+                      class="button Open"
+                    ></div>
+                  </div>
+                  <div class="codeGame codeGame-control-execute">
+                    <button
+                      id="codeGame-button-runsequence"
+                      class="execute"
+                    ></button>
+                  </div>
+                </div>
+              </div>
+              <div class="codeGame codeGame-control-levelselector">
+                <button
+                  id="codeGame-levelselector-open"
+                  class="levelselector open"
+                >
+                  Select level
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="codeGame-control-upper" class="codeGame-control-upper">
+          <h1 id="codeGame-mainTitle" class="maintitle"></h1>
+          <h3 id="codeGame-subTitle" class="subtitle"></h3>
+        </div>
+
+        <div>
+          <button id="buttonID" class="buttonID">hide</button>
+          <button id="Mute" class="Mute"></button>
+          <button id="Unmute" class="Unmute"></button>
+        </div>
+      </div>
+    </div>
+    <div id="warning-message">
+      <!-- this website is only viewable in landscape mode -->
+      Device or Orientation not supported
+    </div>
+    <script src="pixi.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+
+  <!-- Mirrored from www.w3schools.com/codegame/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Oct 2021 10:10:10 GMT -->
+</html>

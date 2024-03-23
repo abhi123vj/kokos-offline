@@ -1,0 +1,17 @@
+changes in gamecodeui.css
+in bundle_test.js
+
+search // important section
+
+dev comment
+
+set keyCount to zero in all other levels
+
+
+changed matrix logic
+
+
+bugs :
+    bug#1. Doesnt require you to take the key only while reaching the key tile.Even if u press 'take key' button at first and walk over the key, it will be considered picked up.
+    bug#2. While pressing 'try again' in the modal, the camera angle is changing.
+    bug#3. closing modal doesn't reset player position.

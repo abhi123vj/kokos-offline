@@ -1,0 +1,62 @@
+{
+  "frames": {
+    "tileWhite": {
+      "frame": { "x": 0, "y": 0, "w": 500, "h": 500 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 500, "h": 500 },
+      "sourceSize": { "w": 500, "h": 500 }
+    },
+    "tileGray": {
+      "frame": { "x": 0, "y": 500, "w": 500, "h": 500 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 500, "h": 500 },
+      "sourceSize": { "w": 500, "h": 500 }
+    },
+    "tileBlue": {
+      "frame": { "x": 0, "y": 0, "w": 500, "h": 500 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 500, "h": 500 },
+      "sourceSize": { "w": 500, "h": 500 }
+    },
+    "tileMud": {
+      "frame": { "x": 0, "y": 1000, "w": 500, "h": 500 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 500, "h": 500 },
+      "sourceSize": { "w": 500, "h": 500 }
+    },
+    "key1Texture": {
+      "frame": { "x": 0, "y": 1500, "w": 500, "h": 500 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 500, "h": 500 },
+      "sourceSize": { "w": 500, "h": 500 }
+    },
+    "key2Texture": {
+      "frame": { "x": 0, "y": 2000, "w": 500, "h": 500 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 500, "h": 500 },
+      "sourceSize": { "w": 500, "h": 500 }
+    },
+    "key3Texture": {
+      "frame": { "x": 0, "y": 2500, "w": 500, "h": 500 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 500, "h": 500 },
+      "sourceSize": { "w": 500, "h": 500 }
+    }
+  },
+  "meta": {
+    "app": "https://www.codeandweb.com/texturepacker",
+    "version": "1.1",
+    "image": "bwTile.png",
+    "format": "RGBA8888",
+    "size": { "w": 500, "h": 1000 },
+    "scale": "1",
+    "smartupdate": "$TexturePacker:SmartUpdate:d10e80df9bbcb5cc552c1e63124719b7:2faf7a8d431f6a87f33403aa83a84b63:acf13e79bd91e0228471deeb24874539$"
+  }
+}

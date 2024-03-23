@@ -1,0 +1,12 @@
+.camera5
+{
+    border: none;
+    padding: 0;
+    background: none;
+    background-image: url("../model/back.png");
+    width: 52px;
+    height: 52px;
+}
+.camera5:hover {
+    transform: scale(1.1);  
+}

@@ -1,0 +1,8 @@
+{
+  "files": [],
+  "references": [{ "path": "./tsconfig.node.json" }, { "path": "./tsconfig.web.json" }],
+  "compilerOptions": {
+    // Your compiler options here
+  },
+  "include": ["src", "env.d.ts"] 
+}

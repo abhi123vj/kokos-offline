@@ -1,0 +1,2230 @@
+[
+  {
+    "name": "Level 1",
+    "category": "Grade1",
+    "subTitle": "Help Bagu to walk and get the bamboo shoots.<br> Click on <b>Steps button </b> for walk and <b>Direction buttons </b> for turn.<br>Go straight. No need to turn. You can reach in two steps.",
+    "validInput": [0,1,2],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [0,2],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 4,
+    "goalConfig" : {
+      "position" : [4,0],
+      "playerCanMoveToPosition": true,
+      "mustInteractToWin": false,
+      "texture":"cone",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [2,  2,  2, 2],
+      [2,  2,  2, 2],
+      [2,  2,  2, 2],
+      [2,  2,  2, 2]
+    ],
+    "decorBackground": [
+      [-1,-1, 1,-1],
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1]
+    ]
+  },
+  {
+    "name": "Level 2",
+    "category": "Grade1",
+    "subTitle": "Help Bagu to walk and get the bamboo shoots.<br> Click on <b>Steps button </b> for walk and <b>Direction buttons </b> for turn.<br>Take a left turn and walk.",
+    "validInput": [0,1,2],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,2],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 4,
+    "goalConfig" : {
+      "position" : [5,1],
+      "playerCanMoveToPosition": true,
+      "mustInteractToWin": false,
+      "texture":"cone",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [2,  2,  2, 2, 2],
+      [2,  2,  2, 2, 2],
+      [2,  2,  2, 2, 2],
+      [2,  2,  2, 2, 2],
+      [2,  2,  2, 2, 2]
+    ],
+    "decorBackground": [
+      [-1,-1, 1,-1],
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1]
+    ]
+  },
+  {
+    "name": "Level 3",
+    "category": "Grade1",
+    "subTitle": "Help Bagu to walk and get the bamboo shoots.<br> Click on <b>Steps button </b> for walk and <b>Direction buttons </b> for turn.<br>Go straight, take a right turn and walk to get the bamboo. ",
+    "validInput": [0,1,2],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [0,2],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 9,
+    "goalConfig" : {
+      "position" : [4,1],
+      "playerCanMoveToPosition": true,
+      "mustInteractToWin": false,
+      "texture":"cone",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [2,  2,  2, 2],
+      [2,  2,  2, 2],
+      [2,  2,  2, 2],
+      [2,  2,  2, 2]
+    ],
+    "decorBackground": [
+      [-1,-1, 1,-1],
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1]
+    ]
+  },
+  {
+    "name": "Level 4",
+    "category": "Grade1",
+    "subTitle": "Help Bagu to walk and get the bamboo shoots.<br> Click on <b>Steps button </b> for walk and <b>Direction buttons </b> for turn.<br>Go straight, take a right turn and walk to get the bamboo.",
+    "validInput": [0,1,2],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,2],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 6,
+    "goalConfig" : {
+      "position" : [3,1],
+      "playerCanMoveToPosition": true,
+      "mustInteractToWin": false,
+      "texture":"cone",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [2,  2,  2, 2, 2],
+      [2,  2,  2, 2, 2],
+      [2,  2,  2, 2, 2],
+      [2,  2,  2, 2, 2],
+      [2,  2,  2, 2, 2]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1, 1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1]
+    ],
+    "boardOffset": [0, 0],
+    "zoomLevel": 0.76125
+  },
+  {
+    "name": "Level 5",
+    "category": "Grade1",
+    "subTitle": "Help Bagu to walk and get the bamboo shoots.<br> Click on <b>Steps button </b> for walk and <b>Direction buttons </b> for turn.<br>Go straight. No need to turn. You can reach in three steps.",
+    "validInput": [0,1,2],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,1],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 9,
+    "goalConfig" : {
+      "position" : [3,3],
+      "playerCanMoveToPosition": true,
+      "mustInteractToWin": false,
+      "texture":"cone",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1,  1,  1,  1,  1],
+      [1,  2,  2,  2,  1],
+      [1,  1,  1,  2,  1],
+      [1,  1,  1,  2,  1],
+      [1,  1,  1,  1,  1]
+    ],
+    "decorBackground": [
+      [-1,-1, 1,-1],
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1]
+    ]
+  },
+  {
+    "name": "Level 6",
+    "category": "Grade1",
+    "subTitle": "Help Bagu to walk and get the bamboo shoots.<br> Click on <b>Steps button </b> for walk and <b>Direction buttons </b> for turn.<br>Dont take too many steps. You can do it in 5 steps. Take minimum turns.",
+    "validInput": [0,1,2],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,3],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 8,
+    "goalConfig" : {
+      "position" : [1,1],
+      "playerCanMoveToPosition": true,
+      "mustInteractToWin": false,
+      "texture":"cone",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [  1,  1,  1,  1,  1],
+      [  1,  2,  2,  2,  1],
+      [  1,  1,  1,  2,  1],
+      [  1,  2,  2,  2,  1],
+      [  1,  1,  1,  1,  1]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1]
+    ],
+    "boardOffset": [0, 0],
+    "zoomLevel": 0.76125
+  },{
+  "name": "Level 7",
+  "category": "Grade1",
+  "subTitle": "Help Bagu to walk and get the bamboo shoots.<br> Click on <b>Steps button </b> for walk and <b>Direction buttons </b> for turn.<br>Dont take too many steps. You can do it in 5 steps.Take minimum turns.",
+  "validInput": [0,1,2],
+  "backgroundColor": [200,230,240],
+  "lockMovementToPathTiles": true,
+  "tileWidth": 450,
+  "playerStartTile": [1,3],
+  "playerStartDirection": 0,
+  "slotsAvailable" : 8,
+  "goalConfig" : {
+    "position" : [5,1],
+    "playerCanMoveToPosition": true,
+    "mustInteractToWin": false,
+    "texture":"cone",
+    "playerMustFaceDirectionToInteract": 3,
+    "positionOffset" : [0,0],
+    "scale" : 1.0
+  },
+  "playerScale": 1.0,
+  "board": [
+    [  1,  1,  1,  1,  1,  1,  1],
+    [  1,  1,  1,  2,  2,  2,  1],
+    [  1,  1,  1,  2,  1,  1,  1],
+    [  1,  2,  2,  2,  1,  1,  1],
+    [  1,  1,  1,  1,  1,  1,  1]
+  ],
+  "decorBackground": [
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1]
+  ],
+  "decorForeground": [
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1]
+  ],
+  "boardOffset": [0, 0],
+  "zoomLevel": 0.76125
+},{
+  "name": "Level 8",
+  "category": "Grade1",
+  "subTitle": "Help Bagu to walk and get the bamboo shoots.<br> Click on <b>Steps button </b> for walk and <b>Direction buttons </b> for turn.<br>Dont take too many steps. You can do it in 7 steps.Take minimum turns.",
+  "validInput": [0,1,2],
+  "backgroundColor": [200,230,240],
+  "lockMovementToPathTiles": true,
+  "tileWidth": 450,
+  "playerStartTile": [1,3],
+  "playerStartDirection": 0,
+  "slotsAvailable" : 7,
+  "goalConfig" : {
+    "position" : [5,1],
+    "playerCanMoveToPosition": true,
+    "mustInteractToWin": false,
+    "texture":"cone",
+    "playerMustFaceDirectionToInteract": 3,
+    "positionOffset" : [0,0],
+    "scale" : 1.0
+  },
+  "playerScale": 1.0,
+  "board": [
+    [  1,  1,  1,  1,  1,  1,  1],
+    [  1,  2,  2,  2,  2,  2,  1],
+    [  1,  2,  2,  2,  2,  2,  1],
+    [  1,  2,  2,  2,  2,  2,  1],
+    [  1,  1,  1,  1,  1,  1,  1]
+  ],
+  "decorBackground": [
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1]
+  ],
+  "decorForeground": [
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1]
+  ],
+  "boardOffset": [0, 0],
+  "zoomLevel": 0.76125
+},{
+  "name": "Level 9",
+  "category": "Grade1",
+  "subTitle": "Help Bagu to walk and get the bamboo shoots.<br> Click on <b>Steps button </b> for walk and <b>Direction buttons </b> for turn.<br>Dont take too many steps. You can do it in 6 steps.Take minimum turns.",
+  "validInput": [0,1,2],
+  "backgroundColor": [200,230,240],
+  "lockMovementToPathTiles": true,
+  "tileWidth": 450,
+  "playerStartTile": [1,3],
+  "playerStartDirection": 0,
+  "slotsAvailable" : 9,
+  "goalConfig" : {
+    "position" : [5,1],
+    "playerCanMoveToPosition": true,
+    "mustInteractToWin": false,
+    "texture":"cone",
+    "playerMustFaceDirectionToInteract": 3,
+    "positionOffset" : [0,0],
+    "scale" : 1.0
+  },
+  "playerScale": 1.0,
+  "board": [
+    [  1,  1,  1,  1,  1,  1,  1],
+    [  1,  2,  2,  2,  2,  2,  1],
+    [  1,  2,  2,  2,  2,  2,  1],
+    [  1,  2,  2,  2,  2,  2,  1],
+    [  1,  1,  1,  1,  1,  1,  1]
+  ],
+  "decorBackground": [
+    [-1,-1,-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1, 1,-1,-1],
+    [-1,-1,-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1, 1,-1],
+    [-1,-1,-1,-1,-1,-1,-1]
+  ],
+  "decorForeground": [
+    [-1,-1,-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1, 1,-1],
+    [-1,-1,-1,-1,-1,-1,-1]
+  ],
+  "boardOffset": [0, 0],
+  "zoomLevel": 0.76125
+},
+  {
+    "name": "Level 10",
+    "category": "Grade1",
+    "subTitle": "Help Bagu to walk and get the bamboo shoots.<br> Click on <b>Steps button </b> for walk and <b>Direction buttons </b> for turn.<br>Take a left turn and walk. ",
+    "validInput": [0,1,2],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,4],
+    "playerStartDirection": 3,
+    "slotsAvailable" : 5,
+    "goalConfig" : {
+      "position" : [1,0],
+      "playerCanMoveToPosition": false,
+      "mustInteractToWin": true,
+      "texture":"chestnokeyneeded",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1,  1,  1],
+      [1,  2,  1],
+      [1,  2,  1],
+      [1,  2,  1],
+      [1,  2,  1],
+      [1,  1,  1]
+    ],
+    "decorBackground": [
+      [-1,-1, -1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1]
+    ]
+
+  },{
+  "name": "Level 11",
+  "category": "Grade1",
+  "subTitle": "Help Bagu to walk and get the bamboo shoots.<br> Click on <b>Steps button </b> for walk and <b>Direction buttons </b> for turn.<br>Dont take too many steps. You can do it in 7 steps.Take minimum turns.",
+  "validInput": [0,1,2],
+  "backgroundColor": [200,230,240],
+  "lockMovementToPathTiles": true,
+  "tileWidth": 450,
+  "playerStartTile": [1,4],
+  "playerStartDirection": 0,
+  "slotsAvailable" : 7,
+  "goalConfig" : {
+    "position" : [3,1],
+    "playerCanMoveToPosition": false,
+    "mustInteractToWin": true,
+    "texture":"chestnokeyneeded",
+    "playerMustFaceDirectionToInteract": 3,
+    "positionOffset" : [0,0],
+    "scale" : 1.0
+  },
+  "playerScale": 1.0,
+  "board": [
+    [998,998, 1, 1, 1],
+    [998,998, 1, 2, 1],
+    [998,998, 1, 2, 1],
+    [ 1,  1,  1, 2, 1],
+    [ 1,  2,  2, 2, 1],
+    [ 1,  1,  1, 1, 1]
+  ],
+  "decorBackground": [
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1],
+    [-1,-1, 1,-1,-1],
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1]
+  ],
+  "decorForeground": [
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1]
+  ]
+
+},
+  {
+    "name": "Level 12",
+    "category": "Grade1",
+    "subTitle": "Help Bagu to walk and get the bamboo shoots.<br> Click on <b>Steps button </b> for walk and <b>Direction buttons </b> for turn.<br>Dont take too many steps. You can do it in 6 steps.Take minimum turns.",
+    "validInput": [0,1,2],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,4],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 6,
+    "goalConfig" : {
+      "position" : [2,1],
+      "playerCanMoveToPosition": false,
+      "mustInteractToWin": true,
+      "texture":"chestnokeyneeded",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1,1, 1, 1, 1],
+      [1,2, 2, 2, 1],
+      [1,2, 2, 2, 1],
+      [ 1,  2,  2, 2, 1],
+      [ 1,  2,  2, 2, 1],
+      [ 1,  1,  1, 1, 1]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1]
+    ]
+
+  },
+  {
+    "name": "Level 13",
+    "category": "Grade2",
+    "subTitle": "Help Bagu to walk and get the bamboo shoots.<br> Click on <b>Steps button </b> for walk and <b>Direction buttons </b> for turn.<br>Go straight, take a right turn and walk to get the bamboo. ",
+    "validInput": [0,1,2],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,1],
+    "playerStartDirection": 3,
+    "slotsAvailable" : 9,
+    "goalConfig" : {
+      "position" : [1,2],
+      "playerCanMoveToPosition": false,
+      "mustInteractToWin": true,
+      "texture":"chestnokeyneeded",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [ 1, 1, 1, 1, 1],
+      [ 1, 2, 2, 2, 1],
+      [ 1, 2, 2, 2, 1],
+      [ 1, 2, 2, 2, 1],
+      [ 1, 2, 2, 2, 1],
+      [ 1, 1, 1, 1, 1]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1]
+    ]
+
+  },
+
+  {
+    "name": "Level 14",
+    "category": "Grade2",
+    "subTitle": "Help Bagu to walk and get the bamboo shoots.<br> Click on <b>Steps button </b> for walk and <b>Direction buttons </b> for turn.<br>Go straight, take a right turn and walk to get the bamboo. ",
+    "validInput": [0,1,2],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [0,4],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 12,
+    "goalConfig" : {
+      "position" : [3,0],
+      "playerCanMoveToPosition": false,
+      "mustInteractToWin": true,
+      "texture": "chestnokeyneeded",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1,1,1,1,1],
+      [1,1,1,2,1],
+      [1,1,2,2,1],
+      [1,2,2,1,1],
+      [2,2,1,1,1]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1]
+    ]
+  },
+  {
+    "name": "Level 15",
+    "category": "Grade2",
+    "subTitle": "Help Bagu to walk and get the bamboo shoots.<br> Click on <b>Steps button </b> for walk and <b>Direction buttons </b> for turn.<br>Go straight, take a left turn and walk to get the bamboo. ",
+    "validInput": [0,1,2],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [4,4],
+    "playerStartDirection": 2,
+    "slotsAvailable" : 12,
+    "goalConfig" : {
+      "position" : [1,0],
+      "playerCanMoveToPosition": false,
+      "mustInteractToWin": true,
+      "texture": "chestnokeyneeded",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1, 1, 1, 1, 1],
+      [1, 2, 1, 1, 1],
+      [1, 2, 2, 1, 1],
+      [1, 1, 2, 2, 1],
+      [1, 1, 1, 2, 2]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1]
+    ]
+  },
+  {
+    "name": "Level 16",
+    "category": "Grade2",
+    "subTitle": "Help Bagu to walk and get the bamboo shoots.<br> Click on <b>Steps button </b> for walk and <b>Direction buttons </b> for turn.<br>Go straight, take a left turn and walk to get the bamboo. ",
+    "validInput": [0,1,2],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,4],
+    "playerStartDirection": 3,
+    "slotsAvailable" : 9,
+    "goalConfig" : {
+      "position" : [1,0],
+      "playerCanMoveToPosition": false,
+      "mustInteractToWin": true,
+      "texture":"chest",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1,  1,  1],
+      [1,  2,  1],
+      [1,  2,  1],
+      [1,  2,  1],
+      [1,  2,  1],
+      [1,  1,  1]
+    ],
+    "decorBackground": [
+      [-1,-1, -1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1]
+    ],
+    "itemBoard" : [
+      [-1, -1, -1],
+      [-1, -1, -1],
+      [-1,  1, -1],
+      [-1, -1, -1],
+      [-1, -1, -1],
+      [-1, -1, -1]
+    ]
+
+  },
+  {
+    "name": "Level 17",
+    "category": "Grade2",
+    "subTitle": "Help Bagu to walk and get the <b>key</b> first.<br> Take the key and walk again to the locked bamboo shoots.<br>Open the <b>box</b> and enjoy the food.Walk to the Key.<br>Take it and walk again to get the bamboo. Do it in minimum steps.",
+    "validInput": [0,1,2,3,5],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [2,5],
+    "playerStartDirection": 3,
+    "slotsAvailable" : 11,
+    "goalConfig" : {
+      "position" : [2,0],
+      "playerCanMoveToPosition": false,
+      "mustInteractToWin": true,
+      "texture":"chest",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [998, 1, 1, 1],
+      [ 1, 1, 2, 1],
+      [ 1, 2, 2, 1],
+      [ 1, 1, 2, 1],
+      [998, 1, 2, 1],
+      [998, 1, 2, 1],
+      [998, 1, 1, 1]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1]
+    ],
+    "itemBoard" : [
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1],
+      [-1, 1,-1,-1],
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1],
+      [-1,-1,-1,-1]
+    ]
+
+  },
+  {
+    "name": "Level 18",
+    "category": "Grade2",
+    "subTitle": "Help Bagu to walk and get the <b>key</b> first.<br> Take the key and walk again to the locked bamboo shoots.<br>Open the <b>box</b> and enjoy the food.Walk to the Key.<br>Take it and walk again to get the bamboo. Do it in minimum steps.",
+    "validInput": [0,1,2,3,5],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,5],
+    "playerStartDirection": 3,
+    "slotsAvailable" : 12,
+    "goalConfig" : {
+      "position" : [1,0],
+      "playerCanMoveToPosition": false,
+      "mustInteractToWin": true,
+      "texture":"chest",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [ 1, 1, 1, 1, 1],
+      [ 1, 2, 1, 1, 1],
+      [ 1, 2, 1, 1, 1],
+      [ 1, 2, 2, 2, 1],
+      [ 1, 2, 1, 2, 1],
+      [ 1, 2, 2, 2, 1],
+      [ 1, 1, 1, 1, 1]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1]
+    ],
+    "itemBoard" : [
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1, 1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1]
+    ]
+
+  },
+  {
+    "name": "Level 19",
+    "category": "Grade2",
+    "subTitle": "Help Bagu to walk and get the <b>key</b> first.<br> Take the key and walk again to the locked bamboo shoots.<br>Open the <b>box</b> and enjoy the food.Go straight.<br>Take a left turn and get the key. Walk straight to get the bamboo.",
+    "validInput": [0,1,2,3,5],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,5],
+    "playerStartDirection": 3,
+    "slotsAvailable" : 11,
+    "goalConfig" : {
+      "position" : [1,0],
+      "playerCanMoveToPosition": false,
+      "mustInteractToWin": true,
+      "texture":"chest",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [ 1, 1, 1, 1, 1],
+      [ 1, 2, 1, 1, 1],
+      [ 1, 2, 1, 1, 1],
+      [ 1, 2, 2, 2, 1],
+      [ 1, 2, 1, 2, 1],
+      [ 1, 2, 2, 2, 1],
+      [ 1, 1, 1, 1, 1]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1]
+    ],
+    "itemBoard" : [
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1, 1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1]
+    ]
+
+  },
+  {
+    "name": "Level 20",
+    "category": "Grade2",
+    "subTitle": "Help Bagu to walk and get the <b>key</b> first.<br> Take the key and walk again to the locked bamboo shoots.<br>Open the <b>box</b> and enjoy the food.Go straight. Take a left turn and get the key.<br>Continue walking to get the bamboo. Do it with minimum no of turns.",
+    "validInput": [0,1,2,3,5],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,2],
+    "playerStartDirection": 3,
+    "slotsAvailable" : 14,
+    "goalConfig" : {
+      "position" : [1,0],
+      "playerCanMoveToPosition": false,
+      "mustInteractToWin": true,
+      "texture":"chest",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1,  1,  1],
+      [1,  2,  1],
+      [1,  2,  1],
+      [1,  2,  1],
+      [1,  2,  1],
+      [1,  1,  1]
+    ],
+    "decorBackground": [
+      [-1,-1, -1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1]
+    ],
+    "itemBoard" : [
+      [-1, -1, -1],
+      [-1, -1, -1],
+      [-1, -1, -1],
+      [-1, -1, -1],
+      [-1,  1, -1],
+      [-1, -1, -1]
+    ]
+
+  },
+  {
+    "name": "Level 21",
+    "category": "Grade2",
+    "subTitle": "Help Bagu to walk and get the <b>key</b> first.<br> Take the key and walk again to the locked bamboo shoots.<br>Open the <b>box</b> and enjoy the food.Walk to the Key.<br>Take it and walk again to get the bamboo. Do it in minimum steps and minimum turns.",
+    "validInput": [0,1,2,3,5],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [4,3],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 16,
+    "goalConfig" : {
+      "position" : [6,1],
+      "playerCanMoveToPosition": false,
+      "mustInteractToWin": true,
+      "texture":"chest",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1,  1,  1,  1,  1,  1,  1,  1],
+      [1,  2,  2,  2,  2,  1,  2,  1],
+      [1,  1,  1,  1,  2,  2,  2,  1],
+      [1,  1,  1,  1,  2,  2,  2,  1],
+      [1,  1,  1,  1,  1,  1,  1,  1]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1, 1,-1,-1,-1],
+      [-1,-1,-1,-1, 1,-1]
+    ],
+    "itemBoard": [
+      [-1,-1,-1,-1,-1,-1,-1,-1],
+      [-1,1,-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1,-1,-1]
+    ]
+  },
+  {
+    "name": "Level 22",
+    "category": "Grade2",
+    "subTitle": "Help Bagu to walk and get the <b>key</b> first.<br> Take the key and walk again to the locked bamboo shoots.Open the <b>box</b> <br>and enjoy the food.Walk to the Key.Take it and walk again<br> to get the bamboo. Do it in minimum steps and minimum turns.<br>( Only 2 turns required).",
+    "validInput": [0,1,2,3,5],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,1],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 14,
+    "goalConfig" : {
+      "position" : [6,1],
+      "playerCanMoveToPosition": true,
+      "mustInteractToWin": false,
+      "texture": "cone",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1,  1,  1,  1,  1,  1,  1, 1],
+      [1,  2,  2,  2,  2,  2,  2, 1],
+      [1,  1,  1,  1,  1,  1,  1, 1]
+    ],
+    "decorBackground": [
+      [-1,-1, 1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1,-1,-1]
+    ]
+  },{
+  "name": "Level 23",
+  "category": "Grade2",
+  "subTitle": "Help Bagu to walk and get the <b>key</b> first.<br> Take the key and walk again to the locked bamboo shoots.<br>Open the <b>box</b> and enjoy the foodWalk to the Key.Take it and walk again<br> to get the bamboo. Do it in minimum steps and minimum turns.<br>( Only 3 turns required).",
+  "validInput": [0,1,2,3,5],
+  "backgroundColor": [200,230,240],
+  "lockMovementToPathTiles": true,
+  "tileWidth": 450,
+  "playerStartTile": [3,1],
+  "playerStartDirection": 0,
+  "slotsAvailable" : 17,
+  "goalConfig" : {
+    "position" : [1,1],
+    "playerCanMoveToPosition": true,
+    "mustInteractToWin": false,
+    "texture": "cone",
+    "playerMustFaceDirectionToInteract": 3,
+    "positionOffset" : [0,0],
+    "scale" : 1.0
+  },
+  "playerScale": 1.0,
+  "board": [
+    [1, 1, 1, 1, 1],
+    [1, 2, 1, 2, 1],
+    [1, 2, 1, 2, 1],
+    [1, 2, 2, 2, 1],
+    [1, 1, 1, 1, 1]
+  ],
+  "decorBackground": [
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1]
+  ],
+  "decorForeground": [
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1],
+    [-1,-1,-1,-1,-1]
+  ]
+},
+  {
+    "name": "Level 24",
+    "category": "Grade2",
+    "subTitle": "Help Bagu to walk and get the <b>key</b> first.<br> Take the key and walk again to the locked bamboo shoots.Open the <b>box</b> and <br>enjoy the food.Walk to the Key. Take it and walk again to get the bamboo.<br>Do it in minimum steps and minimum turns.",
+    "validInput": [0,1,2,3,5],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,1],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 17,
+    "goalConfig" : {
+      "position" : [4,4],
+      "playerCanMoveToPosition": true,
+      "mustInteractToWin": false,
+      "texture": "cone",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1, 1, 1, 998, 998, 998],
+      [1, 2, 1, 1, 998, 998],
+      [1, 2, 2, 1, 1, 998],
+      [1, 1, 2, 2, 1, 1],
+      [998, 1, 1, 2, 2, 1],
+      [998, 998, 1, 1, 1, 1]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ]
+  },
+  {
+    "name": "Level 25",
+    "category": "Grade3",
+    "subTitle": "Help Bagu to walk and get the bamboo shoots.<br>Click on Steps button for walk and Direction buttons for turn.Do it using<br>minimum steps.Go straight, take a right turn and walk to get the bamboo.<br>Use loop wherever it is walking more than one step..",
+    "validInput": [0,1,2,4],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [4,4],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 9,
+    "goalConfig" : {
+      "position" : [1,1],
+      "playerCanMoveToPosition": true,
+      "mustInteractToWin": false,
+      "texture": "cone",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1, 1, 1, 1, 1, 1],
+      [1, 2, 2, 2, 2, 1],
+      [1, 2, 2, 2, 2, 1],
+      [1, 2, 2, 2, 2, 1],
+      [1, 2, 2, 2, 2, 1],
+      [1, 1, 1, 1, 1, 1]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ]
+  },
+  {
+    "name": "Level 26",
+    "category": "Grade3",
+    "subTitle": "Help Bagu to walk and get the bamboo shoots.<br>Click on Steps button for walk and Direction buttons for turn.Do it using<br>minimum steps.Go straight, take a right turn and walk to get the bamboo.<br>Use loop wherever it is walking more than one step..",
+    "validInput": [0,1,2,4],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,6],
+    "playerStartDirection": 3,
+    "slotsAvailable" : 9,
+    "goalConfig" : {
+      "position" : [1,0],
+      "playerCanMoveToPosition": false,
+      "mustInteractToWin": true,
+      "texture":"chestnokeyneeded",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1,  1,  1],
+      [1,  2,  1],
+      [1,  2,  1],
+      [1,  2,  1],
+      [1,  2,  1],
+      [1,  2,  1],
+      [1,  2,  1],
+      [1,  1,  1]
+    ],
+    "decorBackground": [
+      [-1,-1, -1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1]
+    ]
+
+  },
+  {
+    "name": "Level 27",
+    "category": "Grade3",
+    "subTitle": "Help Bagu to walk and get the bamboo shoots.<br>Click on Steps button for walk and Direction buttons for turn.Do it using<br>minimum steps.Go straight, take a right turn and walk to get the bamboo.<br>Use loop wherever it is walking more than one step..",
+    "validInput": [0,1,2,4],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,1],
+    "playerStartDirection": 3,
+    "slotsAvailable" : 9,
+    "goalConfig" : {
+      "position" : [1,0],
+      "playerCanMoveToPosition": false,
+      "mustInteractToWin": true,
+      "texture":"chest",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1,  1,  1],
+      [1,  2,  1],
+      [1,  2,  1],
+      [1,  2,  1],
+      [1,  2,  1],
+      [1,  1,  1]
+    ],
+    "decorBackground": [
+      [-1,-1, -1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1]
+    ],
+    "itemBoard": [
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1, 1,-1],
+      [-1,-1,-1]
+    ]
+
+  },
+  {
+    "name": "Level 28",
+    "category": "Grade3",
+    "subTitle": "Help Bagu to walk and get the key first.<br>Take the key and walk again to the locked bamboo shoots. Open the box <br>and enjoy the food.Take one step. Take a right turn and a step to take the key. <br>Now walk one more step,take a right turn, walk one more step to <br>open the box.",
+    "validInput": [0,1,2,3,5],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,1],
+    "playerStartDirection": 3,
+    "slotsAvailable" : 9,
+    "goalConfig" : {
+      "position" : [1,0],
+      "playerCanMoveToPosition": false,
+      "mustInteractToWin": true,
+      "texture":"chest",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1,  1,  1],
+      [1,  2,  1],
+      [1,  2,  1],
+      [1,  2,  1],
+      [1,  2,  1],
+      [1,  1,  1]
+    ],
+    "decorBackground": [
+      [-1,-1, -1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1]
+    ],
+    "itemBoard": [
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1,-1,-1],
+      [-1, 1,-1],
+      [-1,-1,-1]
+    ]
+
+  },
+  {
+    "name": "Level 29",
+    "category": "Grade3",
+    "subTitle": "Help Bagu to walk and get the key first.<br>Take the key and walk again to the locked bamboo shoots. Open the box <br>and enjoy the food.Walk to the Key. Take it and walk again to the box. <br>Do it using minimum no of steps.",
+    "validInput": [0,1,2,3,5],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,1],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 14,
+    "goalConfig" : {
+      "position" : [4,4],
+      "playerCanMoveToPosition": true,
+      "mustInteractToWin": false,
+      "texture": "cone",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1, 1, 1, 998, 998, 998],
+      [1, 2, 1, 1, 998, 998],
+      [1, 2, 2, 1, 1, 998],
+      [1, 1, 2, 2, 1, 1],
+      [998, 1, 1, 2, 2, 1],
+      [998, 998, 1, 1, 1, 1]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ]
+  },
+  {
+    "name": "Level 30",
+    "category": "Grade3",
+    "subTitle": "Help Bagu to walk and get the key first.<br>Take the key and walk again to the locked bamboo shoots. Open the box <br>and enjoy the food.Walk to the Key. Take it and walk again to the box. <br>Do it using minimum no of steps. Use loops wherever it has to walk <br>more than one step.",
+    "validInput": [0,1,2,3,4,5],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,1],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 20,
+    "goalConfig" : {
+      "position" : [4,4],
+      "playerCanMoveToPosition": true,
+      "mustInteractToWin": false,
+      "texture": "cone",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1, 1, 1, 998, 998, 998],
+      [1, 2, 1, 1, 998, 998],
+      [1, 2, 2, 1, 1, 998],
+      [1, 1, 2, 2, 1, 1],
+      [998, 1, 1, 2, 2, 1],
+      [998, 998, 1, 1, 1, 1]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ]
+  },
+  {
+    "name": "Level 31",
+    "category": "Grade3",
+    "subTitle": "Help Bagu to walk and get the key first.<br>Take the key and walk again to the locked bamboo shoots. Open the box <br>and enjoy the food.Walk to the Key. Take it and walk again to the box. <br>Do it using minimum no of steps. Use loops wherever it has to walk <br>more than one step.",
+    "validInput": [0,1,2,3,4,5],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,1],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 18,
+    "goalConfig" : {
+      "position" : [4,4],
+      "playerCanMoveToPosition": true,
+      "mustInteractToWin": false,
+      "texture": "cone",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1, 1, 1, 998, 998, 998],
+      [1, 2, 1, 1, 998, 998],
+      [1, 2, 2, 1, 1, 998],
+      [1, 1, 2, 2, 1, 1],
+      [998, 1, 1, 2, 2, 1],
+      [998, 998, 1, 1, 1, 1]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ]
+  },
+  {
+    "name": "Level 32",
+    "category": "Grade3",
+    "subTitle": "Help Bagu to walk and get the key first.<br>Take the key and walk again to the locked bamboo shoots. Open the box <br>and enjoy the food.Walk to the Key. Take it and walk again to the box. <br>Do it using minimum no of steps. Use loops wherever it has to walk <br>more than one step.",
+    "validInput": [0,1,2,3,4,5],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,1],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 14,
+    "goalConfig" : {
+      "position" : [4,4],
+      "playerCanMoveToPosition": true,
+      "mustInteractToWin": false,
+      "texture": "cone",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1, 1, 1, 998, 998, 998],
+      [1, 2, 1, 1, 998, 998],
+      [1, 2, 2, 1, 1, 998],
+      [1, 1, 2, 2, 1, 1],
+      [998, 1, 1, 2, 2, 1],
+      [998, 998, 1, 1, 1, 1]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ]
+  },
+  {
+    "name": "Level 33",
+    "category": "Grade3",
+    "subTitle": "Help Bagu to walk and get the key first.<br>Take the key and walk again to the locked bamboo shoots. Open the box <br>and enjoy the food.Walk to the Key. Take it and walk again to the box. <br>Do it using minimum no of steps. Use loops wherever it has to walk <br>more than one step.",
+    "validInput": [0,1,2,3,4,5],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,1],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 21,
+    "goalConfig" : {
+      "position" : [4,4],
+      "playerCanMoveToPosition": true,
+      "mustInteractToWin": false,
+      "texture": "cone",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1, 1, 1, 998, 998, 998],
+      [1, 2, 1, 1, 998, 998],
+      [1, 2, 2, 1, 1, 998],
+      [1, 1, 2, 2, 1, 1],
+      [998, 1, 1, 2, 2, 1],
+      [998, 998, 1, 1, 1, 1]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ]
+  },
+  {
+    "name": "Level 34",
+    "category": "Grade3",
+    "subTitle": "Help Bagu to walk and get the key first.<br>Take the key and walk again to the locked bamboo shoots. Open the box <br>and enjoy the food.Go straight, take a left turn and walk to get the bamboo.<br>Use loop wherever it is walking more than one step..",
+    "validInput": [0,1,2,4],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,1],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 9,
+    "goalConfig" : {
+      "position" : [4,4],
+      "playerCanMoveToPosition": true,
+      "mustInteractToWin": false,
+      "texture": "cone",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1, 1, 1, 998, 998, 998],
+      [1, 2, 1, 1, 998, 998],
+      [1, 2, 2, 1, 1, 998],
+      [1, 1, 2, 2, 1, 1],
+      [998, 1, 1, 2, 2, 1],
+      [998, 998, 1, 1, 1, 1]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ]
+  },
+  {
+    "name": "Level 35",
+    "category": "Grade3",
+    "subTitle": "Help Bagu to walk and get the key first.<br>Take the key and walk again to the locked bamboo shoots. Open the box <br>and enjoy the food.Walk to the Key. Take it and walk again to the box. <br>Do it using minimum no of steps. Use loops wherever it has to walk <br>more than one step.",
+    "validInput": [0,1,2,3,4,5],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,1],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 17,
+    "goalConfig" : {
+      "position" : [4,4],
+      "playerCanMoveToPosition": true,
+      "mustInteractToWin": false,
+      "texture": "cone",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1, 1, 1, 998, 998, 998],
+      [1, 2, 1, 1, 998, 998],
+      [1, 2, 2, 1, 1, 998],
+      [1, 1, 2, 2, 1, 1],
+      [998, 1, 1, 2, 2, 1],
+      [998, 998, 1, 1, 1, 1]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ]
+  }, {
+    "name": "Level 36",
+    "category": "Grade3",
+    "subTitle": "Help Bagu to walk and get the key first.<br>Take the key and walk again to the locked bamboo shoots. Open the box <br>and enjoy the food.Walk to the Key. Take it and walk again to the box. <br>Do it using minimum no of steps. Use loops wherever it has to walk <br>more than one step.",
+    "validInput": [0,1,2,3,4,5],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,1],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 21,
+    "goalConfig" : {
+      "position" : [4,4],
+      "playerCanMoveToPosition": true,
+      "mustInteractToWin": false,
+      "texture": "cone",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1, 1, 1, 998, 998, 998],
+      [1, 2, 1, 1, 998, 998],
+      [1, 2, 2, 1, 1, 998],
+      [1, 1, 2, 2, 1, 1],
+      [998, 1, 1, 2, 2, 1],
+      [998, 998, 1, 1, 1, 1]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ]
+  }, {
+    "name": "Level 37",
+    "category": "Grade3",
+    "subTitle": "Help Bagu to walk and get the bamboo shoots.<br> Click on <b>Steps button </b> for walk and <b>Direction buttons </b> for turn.<br>But avoid stepping on the magma pool. Dont take too many steps. You can do it in 12 steps. Take minimum turns.",
+    "validInput": [0,1,2,4],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,1],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 13,
+    "goalConfig" : {
+      "position" : [4,4],
+      "playerCanMoveToPosition": true,
+      "mustInteractToWin": false,
+      "texture": "cone",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1, 1, 1, 998, 998, 998],
+      [1, 2, 1, 1, 998, 998],
+      [1, 2, 2, 1, 1, 998],
+      [1, 1, 2, 2, 1, 1],
+      [998, 1, 1, 2, 2, 1],
+      [998, 998, 1, 1, 1, 1]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ]
+  }, {
+    "name": "Level 38",
+    "category": "Grade3",
+    "subTitle": "Help Bagu to walk and get the bamboo shoots.<br> Click on <b>Steps button </b> for walk and <b>Direction buttons </b> for turn.<br>But avoid stepping on the magma pool. Dont take too many steps. You can do it in 12 steps. Use loop to do it in minimum turns.",
+    "validInput": [0,1,2,4],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,1],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 8,
+    "goalConfig" : {
+      "position" : [4,4],
+      "playerCanMoveToPosition": true,
+      "mustInteractToWin": false,
+      "texture": "cone",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1, 1, 1, 998, 998, 998],
+      [1, 2, 1, 1, 998, 998],
+      [1, 2, 2, 1, 1, 998],
+      [1, 1, 2, 2, 1, 1],
+      [998, 1, 1, 2, 2, 1],
+      [998, 998, 1, 1, 1, 1]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ]
+  }, {
+    "name": "Level 39",
+    "category": "Grade3",
+    "subTitle": "Help Bagu to walk and get the bamboo shoots.<br> Click on <b>Steps button </b> for walk and <b>Direction buttons </b> for turn.<br>But avoid stepping on the magma pool. Dont take too many steps. You can do it in 11 steps. Use loop to do it in minimum turns.",
+    "validInput": [0,1,2,4],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,1],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 13,
+    "goalConfig" : {
+      "position" : [4,4],
+      "playerCanMoveToPosition": true,
+      "mustInteractToWin": false,
+      "texture": "cone",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1, 1, 1, 998, 998, 998],
+      [1, 2, 1, 1, 998, 998],
+      [1, 2, 2, 1, 1, 998],
+      [1, 1, 2, 2, 1, 1],
+      [998, 1, 1, 2, 2, 1],
+      [998, 998, 1, 1, 1, 1]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ]
+  }, {
+    "name": "Level 40",
+    "category": "Grade3",
+    "subTitle": "Help Bagu to walk and get the bamboo shoots.<br> Click on <b>Steps button </b> for walk and <b>Direction buttons </b> for turn.<br>But avoid stepping on the magma pool. Dont take too many steps. You can do it in 10 steps using loops.",
+    "validInput": [0,1,2,4],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,1],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 11,
+    "goalConfig" : {
+      "position" : [4,4],
+      "playerCanMoveToPosition": true,
+      "mustInteractToWin": false,
+      "texture": "cone",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1, 1, 1, 998, 998, 998],
+      [1, 2, 1, 1, 998, 998],
+      [1, 2, 2, 1, 1, 998],
+      [1, 1, 2, 2, 1, 1],
+      [998, 1, 1, 2, 2, 1],
+      [998, 998, 1, 1, 1, 1]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ]
+  }, {
+    "name": "Level 41",
+    "category": "Grade3",
+    "subTitle": "Help Bagu to walk and get the key first.<br>Take the key and walk again to the locked bamboo shoots. Open the box <br>and enjoy the food. But don't beware of the magma pool. <br>Dont take too many steps. You can do it in 16 steps with the help of loops.",
+    "validInput": [0,1,2,3,4,5],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,1],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 18,
+    "goalConfig" : {
+      "position" : [4,4],
+      "playerCanMoveToPosition": true,
+      "mustInteractToWin": false,
+      "texture": "cone",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1, 1, 1, 998, 998, 998],
+      [1, 2, 1, 1, 998, 998],
+      [1, 2, 2, 1, 1, 998],
+      [1, 1, 2, 2, 1, 1],
+      [998, 1, 1, 2, 2, 1],
+      [998, 998, 1, 1, 1, 1]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ]
+  }, {
+    "name": "Level 42",
+    "category": "Grade3",
+    "subTitle": "Help Bagu to walk and get the key first.<br>Take the key and walk again to the locked bamboo shoots. Open the box <br>and enjoy the food. But don't step on the magma pool. <br>Do it using minimum no of steps. You can do it in 13 steps.",
+    "validInput": [0,1,2,3,4,5],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,1],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 15,
+    "goalConfig" : {
+      "position" : [4,4],
+      "playerCanMoveToPosition": true,
+      "mustInteractToWin": false,
+      "texture": "cone",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1, 1, 1, 998, 998, 998],
+      [1, 2, 1, 1, 998, 998],
+      [1, 2, 2, 1, 1, 998],
+      [1, 1, 2, 2, 1, 1],
+      [998, 1, 1, 2, 2, 1],
+      [998, 998, 1, 1, 1, 1]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ]
+  }, {
+    "name": "Level 43",
+    "category": "Grade3",
+    "subTitle": "Help Bagu to walk and get the key first.<br>Take the key and walk again to the locked bamboo shoots. Open the box <br>and enjoy the food. But don't step on the magma pool. <br>Do it using minimum no of steps. You can do it in 19 steps.",
+    "validInput": [0,1,2,3,4,5],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,1],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 20,
+    "goalConfig" : {
+      "position" : [4,4],
+      "playerCanMoveToPosition": true,
+      "mustInteractToWin": false,
+      "texture": "cone",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1, 1, 1, 998, 998, 998],
+      [1, 2, 1, 1, 998, 998],
+      [1, 2, 2, 1, 1, 998],
+      [1, 1, 2, 2, 1, 1],
+      [998, 1, 1, 2, 2, 1],
+      [998, 998, 1, 1, 1, 1]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ]
+  }, {
+    "name": "Level 44",
+    "category": "Grade3",
+    "subTitle": "Help Bagu to walk and get the key first.<br>Take the key and walk again to the locked bamboo shoots. Open the box <br>and enjoy the food. But don't step on the magma pool. <br>Do it using minimum no of steps. You can do it in 16 steps with the help of loops.",
+    "validInput": [0,1,2,3,4,5],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,1],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 17,
+    "goalConfig" : {
+      "position" : [4,4],
+      "playerCanMoveToPosition": true,
+      "mustInteractToWin": false,
+      "texture": "cone",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1, 1, 1, 998, 998, 998],
+      [1, 2, 1, 1, 998, 998],
+      [1, 2, 2, 1, 1, 998],
+      [1, 1, 2, 2, 1, 1],
+      [998, 1, 1, 2, 2, 1],
+      [998, 998, 1, 1, 1, 1]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ]
+  }, {
+    "name": "Level 45",
+    "category": "Grade3",
+    "subTitle": "Help Bagu to walk and get the first key.<br>Take the key and walk again to the second key. Use the keys to unlock the locked bamboo shoots. Open the box <br>and enjoy the food.<br>You can do it in 12 steps with the help of loops.",
+    "validInput": [0,1,2,3,4,5],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,1],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 14,
+    "goalConfig" : {
+      "position" : [4,4],
+      "playerCanMoveToPosition": true,
+      "mustInteractToWin": false,
+      "texture": "cone",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1, 1, 1, 998, 998, 998],
+      [1, 2, 1, 1, 998, 998],
+      [1, 2, 2, 1, 1, 998],
+      [1, 1, 2, 2, 1, 1],
+      [998, 1, 1, 2, 2, 1],
+      [998, 998, 1, 1, 1, 1]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ]
+  }, {
+    "name": "Level 46",
+    "category": "Grade3",
+    "subTitle": "Help Bagu to walk and get the first key.<br>Take the key and walk again to the second key. Use the keys to unlock the locked bamboo shoots. Open the box <br>and enjoy the food.<br>You can do it in 17 steps with the help of loops.",
+    "validInput": [0,1,2,3,4,5],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,1],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 20,
+    "goalConfig" : {
+      "position" : [4,4],
+      "playerCanMoveToPosition": true,
+      "mustInteractToWin": false,
+      "texture": "cone",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1, 1, 1, 998, 998, 998],
+      [1, 2, 1, 1, 998, 998],
+      [1, 2, 2, 1, 1, 998],
+      [1, 1, 2, 2, 1, 1],
+      [998, 1, 1, 2, 2, 1],
+      [998, 998, 1, 1, 1, 1]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ]
+  }, {
+    "name": "Level 47",
+    "category": "Grade3",
+    "subTitle": "Help Bagu to walk and get the all three keys in their order.<br>Use the keys to unlock the locked bamboo shoots. Open the box <br>and enjoy the food.<br>You can do it in 15 steps with the help of loops.",
+    "validInput": [0,1,2,3,4,5],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,1],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 15,
+    "goalConfig" : {
+      "position" : [4,4],
+      "playerCanMoveToPosition": true,
+      "mustInteractToWin": false,
+      "texture": "cone",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1, 1, 1, 998, 998, 998],
+      [1, 2, 1, 1, 998, 998],
+      [1, 2, 2, 1, 1, 998],
+      [1, 1, 2, 2, 1, 1],
+      [998, 1, 1, 2, 2, 1],
+      [998, 998, 1, 1, 1, 1]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ]
+  }, {
+    "name": "Level 48",
+    "category": "Grade3",
+    "subTitle": "Help Bagu to walk and get the all three keys in their order.<br>Use the keys to unlock the locked bamboo shoots. Open the box <br>and enjoy the food.<br>You can do it in 27 steps with the help of loops.",
+    "validInput": [0,1,2,3,4,5],
+    "backgroundColor": [200,230,240],
+    "lockMovementToPathTiles": true,
+    "tileWidth": 450,
+    "playerStartTile": [1,1],
+    "playerStartDirection": 0,
+    "slotsAvailable" : 28,
+    "goalConfig" : {
+      "position" : [4,4],
+      "playerCanMoveToPosition": true,
+      "mustInteractToWin": false,
+      "texture": "cone",
+      "playerMustFaceDirectionToInteract": 3,
+      "positionOffset" : [0,0],
+      "scale" : 1.0
+    },
+    "playerScale": 1.0,
+    "board": [
+      [1, 1, 1, 998, 998, 998],
+      [1, 2, 1, 1, 998, 998],
+      [1, 2, 2, 1, 1, 998],
+      [1, 1, 2, 2, 1, 1],
+      [998, 1, 1, 2, 2, 1],
+      [998, 998, 1, 1, 1, 1]
+    ],
+    "decorBackground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ],
+    "decorForeground": [
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1],
+      [-1,-1,-1,-1,-1,-1]
+    ]
+  }
+]
