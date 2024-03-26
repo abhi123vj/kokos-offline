@@ -1,11 +1,12 @@
 @import './base.css';
 
 body {
+  margin: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-image: url('./wavy-lines.svg');
+  background-image: url('./images/aaabstract.webp');
   background-size: cover;
   user-select: none;
 }
@@ -42,10 +43,6 @@ code {
   transition: filter 300ms;
 }
 
-.logo:hover {
-  filter: drop-shadow(0 0 1.2em #6988e6aa);
-}
-
 .creator {
   font-size: 14px;
   line-height: 16px;
@@ -62,22 +59,22 @@ code {
   text-align: center;
   margin: 0 10px;
   padding: 16px 0;
-}
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    SF Mono,
+    Menlo,
+    Consolas,
+    Liberation Mono,
+    monospace;}
 
 .tip {
   font-size: 16px;
   line-height: 24px;
-  color: var(--ev-c-text-2);
+  color: var(--ev-c-text-1);
   font-weight: 600;
 }
 
-.kokos {
-  background: -webkit-linear-gradient(315deg, #de8d1a 55%, #f1f1f3);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 700;
-}
 .solid {
   background: -webkit-linear-gradient(315deg, #4e86c5 55%, #f1f1f3);
   background-clip: text;
@@ -93,7 +90,25 @@ code {
   -webkit-text-fill-color: transparent;
   font-weight: 700;
 }
-
+.bundle {
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    SF Mono,
+    Menlo,
+    Consolas,
+    Liberation Mono,
+    monospace;
+  padding: 40px 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow:
+    rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  backdrop-filter: blur(5.4px);
+  -webkit-backdrop-filter: blur(5.4px);
+}
 .actions {
   display: flex;
   padding-top: 32px;
@@ -111,7 +126,8 @@ code {
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
-  border: 1px solid transparent;
+  /* border: 1px solid transparent; */
+  border: 1px solid orange;
   text-align: center;
   font-weight: 600;
   white-space: nowrap;
@@ -119,15 +135,31 @@ code {
   padding: 0 20px;
   line-height: 38px;
   font-size: 14px;
-  border-color: var(--ev-button-alt-border);
+  /* border-color: var(--ev-button-alt-border); */
+  /* border-color: -webkit-linear-gradient(315deg, #3178c6 45%, #f0dc4e); */
   color: var(--ev-button-alt-text);
-  background-color: var(--ev-button-alt-bg);
+  /* background-color: var(--ev-button-alt-bg); */
+  background-color: transparent;
+}
+.apps {
+  font-weight: 800;
+  color: var(--ev-button-alt-text-main);
+}
+.action a:hover {
+  /* border-color: var(--ev-button-alt-hover-border); */
+  border-color: transparent;
+  /* color: var(--ev-button-alt-hover-text); */
+  color: rgb(26, 26, 26);
+  /* background-color: var(--ev-button-alt-hover-bg); */
+  background-color: rgb(255, 166, 0);
+  box-shadow:
+    rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  font-style: 600;
 }
 
-.action a:hover {
-  border-color: var(--ev-button-alt-hover-border);
-  color: var(--ev-button-alt-hover-text);
-  background-color: var(--ev-button-alt-hover-bg);
+.action a:hover .apps {
+  color: black;
 }
 
 .versions {
@@ -173,5 +205,80 @@ code {
   .tip,
   .actions {
     display: none;
+  }
+}
+
+.glow-on-hover {
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
   }
 }

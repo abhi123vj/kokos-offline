@@ -16,7 +16,8 @@
   --ev-c-text-3: rgba(235, 235, 245, 0.38);
 
   --ev-button-alt-border: transparent;
-  --ev-button-alt-text: var(--ev-c-text-1);
+  --ev-button-alt-text: var(--ev-c-text-2);
+  --ev-button-alt-text-main: var(--ev-c-text-1);
   --ev-button-alt-bg: var(--ev-c-gray-3);
   --ev-button-alt-hover-border: transparent;
   --ev-button-alt-hover-text: var(--ev-c-text-1);
