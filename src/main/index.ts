@@ -2,8 +2,11 @@ import { app, shell, BrowserWindow, ipcMain } from 'electron'
 import { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
+import { spawn } from 'child_process'
+import log from 'electron-log/main'
 
 import express, { Request, Response } from 'express'
+import { existsSync } from 'fs'
 
 // @ts-ignore (define in dts)
 
@@ -42,7 +45,17 @@ function createWindow(): void {
     console.log('Visual code window is closing.')
   })
 }
-function createVisualCodeGameServer(): void {
+function createServer(): void {
+  log.log(`[createServer] ${__dirname.toString()}`)
+  const filePath = join(__dirname, '..', '..', 'resources', 'code', 'visual_code', 'game.html')
+  log.log(`[createPythonIdeGameWindow] path ${filePath}`)
+
+  // Check if the file exists
+  if (existsSync(filePath)) {
+    log.log(`[createServer] filePath exists}`)
+  } else {
+    log.log(`[createServer] filePath not exists}`)
+  }
   const app = express()
 
   // @ts-ignore (define in dts)
@@ -50,37 +63,21 @@ function createVisualCodeGameServer(): void {
 
   // Serve static files from the 'public' directory
   app.use(express.static(join(__dirname, '..', '..', 'resources', 'code', 'visual_code')))
-
+  app.use(express.static(join(__dirname, '..', '..', 'resources', 'code', 'scratch')))
   // Route for serving the index.html file
-  app.get('/', (_req: Request, res: Response) => {
+  app.get('/visualcode', (_req: Request, res: Response) => {
     res.sendFile(join(__dirname, '..', '..', 'resources', 'code', 'visual_code', 'game.html'))
   })
-
-  // Start the server
-  app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`)
-  })
-}
-function createScratchGameServer(): void {
-  const app = express()
-
-  // @ts-ignore (define in dts)
-  const port = import.meta.env.MAIN_VITE_PORT1
-
-  // Serve static files from the 'public' directory
-  app.use(express.static(join(__dirname, '..', '..', 'resources', 'code', 'scratch')))
-
-  // Route for serving the index.html file
-  app.get('/', (_req: Request, res: Response) => {
+  app.get('/scratch', (_req: Request, res: Response) => {
     res.sendFile(join(__dirname, '..', '..', 'resources', 'code', 'scratch', 'index.html'))
   })
-
   // Start the server
   app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`)
+    console.log(`Server is running on http://localhost:${port}/visualcode`)
   })
 }
-function createVisualCodeGameWindow(): void {
+
+function createChildWindow(uri: string): void {
   // @ts-ignore (define in dts)
   const port = import.meta.env.MAIN_VITE_PORT0
   const visualCodeWindow = new BrowserWindow({
@@ -99,30 +96,52 @@ function createVisualCodeGameWindow(): void {
   visualCodeWindow.on('ready-to-show', () => {
     visualCodeWindow.show()
   })
-
-  visualCodeWindow.loadURL(`http://localhost:${port}`)
+  visualCodeWindow.loadURL(`http://localhost:${port}/${uri}`)
 }
-function createScratchGameWindow(): void {
-  // @ts-ignore (define in dts)
-  const port = import.meta.env.MAIN_VITE_PORT1
-  const visualCodeWindow = new BrowserWindow({
-    width: 1080,
-    height: 670,
-    show: false,
-    autoHideMenuBar: true,
-    ...(process.platform === 'linux' ? { icon } : {}),
-    webPreferences: {
-      preload: join(__dirname, '../preload/index.js'),
-      sandbox: false,
-      contextIsolation: true
+function createPythonIdeGameWindow(): void {
+  log.log(`[createPythonIdeGameWindow] ${__dirname.toString()}`)
+  let executablePath: string = join(
+    __dirname,
+    '..',
+    '..',
+    '..',
+    'app.asar.unpacked',
+    'resources',
+    'executable',
+    'Thonny',
+    'thonny.exe'
+  )
+  log.log(`[createPythonIdeGameWindow] path ${executablePath}`)
+
+  // Check if the file exists
+  if (!existsSync(executablePath)) {
+    executablePath = join(__dirname, '..', '..', 'resources', 'executable', 'Thonny', 'thonny.exe')
+  }
+
+  const childProcess = spawn(executablePath)
+
+  childProcess.stdout.on('data', (data: Buffer) => {
+    log.log(data.toString())
+  })
+
+  childProcess.stderr.on('data', (data: Buffer) => {
+    log.error(data.toString())
+  })
+
+  childProcess.on('error', (err: Error) => {
+    log.error('Child process error:', err)
+  })
+
+  childProcess.on('close', (code: number) => {
+    log.log('Child process exited with code', code)
+  })
+
+  // Handle process termination in the parent
+  process.on('exit', () => {
+    if (!childProcess.killed) {
+      childProcess.kill()
     }
   })
-
-  visualCodeWindow.on('ready-to-show', () => {
-    visualCodeWindow.show()
-  })
-
-  visualCodeWindow.loadURL(`http://localhost:${port}`)
 }
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
@@ -131,8 +150,7 @@ app.whenReady().then(() => {
   // Set app user model id for windows
   electronApp.setAppUserModelId('com.electron')
 
-  createVisualCodeGameServer()
-  createScratchGameServer()
+  createServer()
   // Default open or close DevTools by F12 in development
   // and ignore CommandOrControl + R in production.
   // see https://github.com/alex8088/electron-toolkit/tree/master/packages/utils
@@ -142,12 +160,16 @@ app.whenReady().then(() => {
 
   // IPC test
   ipcMain.on('VisualCode', () => {
-    console.log('pong')
-    createVisualCodeGameWindow()
+    console.log('VisualCode Activated')
+    createChildWindow('visualcode')
   })
   ipcMain.on('Scratch', () => {
-    console.log('pong')
-    createScratchGameWindow()
+    console.log('Scratch Activated')
+    createChildWindow('scratch')
+  })
+  ipcMain.on('PythonIde', () => {
+    console.log('PythonIde Activated')
+    createPythonIdeGameWindow()
   })
 
   createWindow()

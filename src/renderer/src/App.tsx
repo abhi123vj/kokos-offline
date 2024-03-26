@@ -5,27 +5,30 @@ import electronLogo from './assets/kokoslogo.png'
 const App: Component = () => {
   const ipcVisualCodeHandle = (): void => window.electron.ipcRenderer.send('VisualCode')
   const ipcScratchHandle = (): void => window.electron.ipcRenderer.send('Scratch')
+  const ipcPythonIdeHandle = (): void => window.electron.ipcRenderer.send('PythonIde')
 
   return (
     <>
       <img alt="logo" class="logo" src={electronLogo} />
-      <div class="creator">Powered by electron-vite</div>
+      {/* <div class="creator">Powered by electron-vite</div> */}
       <div class="text">
-        <span class="kokos">Kokos Ai</span> app built with <span class="solid">Solid</span>
-        &nbsp;and <span class="ts">TypeScript</span>
+        <span class="kokos">Kokos:</span> A cloud-based AI learning platform.
       </div>
-      <p class="tip">
-        Please try pressing <code>F12</code> to open the devTool
-      </p>
+      <p class="tip">Discover Our Offline Bundles</p>
       <div class="actions">
         <div class="action">
           <a target="_blank" rel="noreferrer" onClick={ipcScratchHandle}>
-            Scratch
+            Explore Scratch
           </a>
         </div>
         <div class="action">
           <a target="_blank" rel="noreferrer" onClick={ipcVisualCodeHandle}>
-            Visual Code
+            Dive into Visual Code
+          </a>
+        </div>
+        <div class="action">
+          <a target="_blank" rel="noreferrer" onClick={ipcPythonIdeHandle}>
+            Experience Python IDE
           </a>
         </div>
       </div>
