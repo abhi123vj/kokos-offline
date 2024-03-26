@@ -80,7 +80,7 @@ function createServer(): void {
 function createChildWindow(uri: string): void {
   // @ts-ignore (define in dts)
   const port = import.meta.env.MAIN_VITE_PORT0
-  const visualCodeWindow = new BrowserWindow({
+  const childWindow = new BrowserWindow({
     width: 1080,
     height: 670,
     show: false,
@@ -89,14 +89,24 @@ function createChildWindow(uri: string): void {
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
       sandbox: false,
-      contextIsolation: true
+      contextIsolation: true,
     }
   })
 
-  visualCodeWindow.on('ready-to-show', () => {
-    visualCodeWindow.show()
+  childWindow.on('ready-to-show', () => {
+    childWindow.show()
   })
-  visualCodeWindow.loadURL(`http://localhost:${port}/${uri}`)
+  childWindow.on('close', (event) => {
+    console.log('Child window closed');
+    // Prevent default close behavior (which would show the alert)
+    event.preventDefault();
+    // Forcefully close the window after a delay (e.g., 2 seconds)
+    setTimeout(() => {
+      childWindow.destroy();
+    }, 100);
+  });
+
+  childWindow.loadURL(`http://localhost:${port}/${uri}`)
 }
 function createPythonIdeGameWindow(): void {
   log.log(`[createPythonIdeGameWindow] ${__dirname.toString()}`)
