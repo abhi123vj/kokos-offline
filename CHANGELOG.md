@@ -8,6 +8,11 @@ All notable changes to this project will be documented in this file.
 ### Bug Fixes
 
 * **des:**  UI improvements.
+
+### Features
+
+* **des:**  Easter Egg Added.
+
 ## [1.0.4] (26-03-2024)
 
 

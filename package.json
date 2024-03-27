@@ -1,6 +1,6 @@
 {
   "name": "kokos-offline",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Experience the future of AI and Robotics education with Kokos.",
   "main": "./out/main/index.js",
   "author": "4bh1",
