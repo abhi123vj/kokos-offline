@@ -15,7 +15,7 @@ const App: Component = () => {
       <br />
       <br />
       <div class="bundle glow-on-hover">
-        <p class="tip">Discover Our Offline Bundles.</p>
+        <p class="tip">Explore our offline bundles for enhanced learning experiences.</p>
         <br />
 
         <div class="actions">

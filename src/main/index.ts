@@ -8,6 +8,8 @@ import log from 'electron-log/main'
 import express, { Request, Response } from 'express'
 import { existsSync } from 'fs'
 
+import { autoUpdater } from 'electron-updater'
+
 // @ts-ignore (define in dts)
 let eggCount = 0
 function createWindow(): void {
@@ -234,7 +236,9 @@ app.whenReady().then(() => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow()
   })
 })
-
+app.on('ready', () => {
+  autoUpdater.checkForUpdatesAndNotify()
+})
 // Quit when all windows are closed, except on macOS. There, it's common
 // for applications and their menu bar to stay active until the user quits
 // explicitly with Cmd + Q.
@@ -246,3 +250,23 @@ app.on('window-all-closed', () => {
 
 // In this file you can include the rest of your app"s specific main process
 // code. You can also put them in separate files and require them here.
+
+autoUpdater.on('checking-for-update', () => {
+  log.log('[autoUpdater] checking-for-update')
+})
+autoUpdater.on('update-available', (info) => {
+  log.log(`[autoUpdater] update-available ${info}`)
+})
+autoUpdater.on('update-not-available', (info) => {
+  log.log(`[autoUpdater] update-not-available ${info}`)
+})
+autoUpdater.on('error', (err) => {
+  log.log(`[autoUpdater] error ${err}`)
+})
+autoUpdater.on('download-progress', (progressObj) => {
+  log.log(`[autoUpdater] download-progress ${progressObj}`)
+})
+autoUpdater.on('update-downloaded', (info) => {
+  log.log(`[autoUpdater] update-downloaded ${info}`)
+  autoUpdater.quitAndInstall()
+})
